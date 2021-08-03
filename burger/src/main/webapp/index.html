@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Burger world</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Commande de restauration rapide</h1>
+        <form>
+        	<div class="left">
+        	<input type="radio" name="lieu" id="place">
+        	<label for="place">Sur place</label>
+        	<input type="radio" name="lieu" id="emporter">
+        	<label for="emporter">A emporter</label>
+        	</div>
+        	
+        	<br>
+        	<label for="burger">Votre burger</label>
+        	<select name="burger" id="burger">
+        		<option value="BLT">BLT Burger</option>
+        		<option value="italian">Italian Burger</option>
+        	</select>
+        	<br>
+        	<label for="acc">Votre accompagnement</label>
+        	<select name="acc" id="acc">
+        		<option value="frites">frites</option>
+        		<option value="cheddar">frites au cheddar</option>
+        	</select>
+        	<br>
+        	<label for="boisson">Votre boisson</label>
+        	<select name="boisson" id="boisson">
+        		<option value="coca">coca</option>
+        		<option value="pepsi">pepsi</option>
+        	</select>
+        	<br>
+        	<label for="comments">Remarques sur votre commande</label>
+        	<textarea rows='5' cols='30'></textarea>
+        	<br>
+        	<div class="left">
+	        	<label for="sauce">Sauce(s)</label>
+	        	<input type="checkbox" name="sauce">Ketchup
+	        	<input type="checkbox" name="sauce">Mayo
+        	</div>
+        	
+        	<br>
+        	<label for="cb">Numéro de CB</label>
+        	<input type="number" name="cb" >
+        	<br>
+        	<label for="mois">mois</label>
+        	<select name="mois" id="mois">
+        		<option value="1">1</option>
+        		<option value="2">2</option>
+        		<option value="3">3</option>
+        		<option value="4">4</option>
+        		<option value="5">5</option>
+        		<option value="6">6</option>
+        		<option value="7">7</option>
+        		<option value="8">8</option>
+        		<option value="9">9</option>
+        		<option value="10">10</option>
+        		<option value="11">11</option>
+        		<option value="12">12</option>
+        	</select>
+        	<br>
+        	<label for="annee">année</label>
+        	<select name="annee" id="annee">
+        		<option value="1">2021</option>
+        		<option value="2">2022</option>
+        		<option value="3">2023</option>
+        		<option value="4">2024</option>
+        		<option value="5">2025</option>
+        		<option value="6">2026</option>
+        	</select>
+        	<br>
+        	<label for="cvv">Cryptogramme</label>
+        	<input type="number" name="cvv" placeholder="123">
+        	<br>
+        	<input type="submit" value="Commander">
+        </form>
+    </body>
+</html>
